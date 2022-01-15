@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+}
+
+.p1 {
+  color: white;
+  background-color: green;
+text-indent: 50px
+}
+
+.p2 {
+  color: green;
+  background-color: yellow;
+text-indent: 50px
+}
+
+.p3 {
+  color: blue;
+  background-color: red;
+text-indent: 50px
+}
