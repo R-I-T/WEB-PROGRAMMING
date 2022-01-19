@@ -1,0 +1,28 @@
+div{
+    border: 6px ;
+    width: 300px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:white;
+    position:absolute;
+    left: 35%;
+    top: 20%;
+}
+body{
+    background-color: red;
+}
+input[type=submit]{
+    background-color:red;
+    color:white;
+    width: 120px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 40px;
+}
+h1{
+    color:red;
+}

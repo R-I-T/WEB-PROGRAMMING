@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lab3</title>        
+        <style>div{
+    border: 6px ;
+    width: 300px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:white;
+    position:absolute;
+    left: 35%;
+    top: 20%;
+}
+body{
+    background-color: red;
+}
+input[type=submit]{
+    background-color:red;
+    color:white;
+    width: 120px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 40px;
+}
+h1{
+    color:red;
+}
+</style>
+        <script>
+        function validation()
+        {
+         var  k=document.getElementById("n");
+           if(k.value == "")
+           {
+         alert("Please enter your name");
+         k.focus();
+         return false;
+           }
+        
+         
+         
+         var  mobile=document.getElementById("m");
+            if(mobile.value == "")
+            {
+               
+        alert("Please enter your phone number");
+         mobile.focus();
+         return false; 
+            }
+var a=/^\d{10}$/;
+         if(mobile.value.match(a))
+         {}
+             else{
+            alert("phone number must be atleast 10 digits or your phone number contains aphabets");
+         mobile.focus();
+         return false;  
+         }
+            
+            var email=document.getElementById("i");
+            if(email.value == "")
+        {
+            alert("please enter the email");
+             email.focus();
+         return false; 
+        }
+            else{
+                if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))
+                {
+               // alert("valid email address");
+                }
+                else{
+                    alert("invalid email address"); 
+                    email.focus();
+         return false; 
+                }
+            }
+        }
+            
+
+        
+        </Script>
+        
+        </head>
+        <body>
+            <div><br><br><center><h1>Enter details....</h1></center>
+            <form action="" name="myform" onsubmit="return validation()">
+           Name<font color="red">*</font>&nbsp;&nbsp;&nbsp;<input type="text" id="n" name="name"><br><br>
+           Mobile<font color="red">*</font>&nbsp;<input type="int" id="m" name="mobile"><br><br>
+           Email<font color="red">*</font>&nbsp;&nbsp;&nbsp;<input type="text" id="i" name="email"><br><br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <input type="submit" value="SUMBIT" >
+           </form>
+            </div>
+
+</body>
+</html>
