@@ -53,7 +53,7 @@ h4{
 </head>
 
 <body><div>
-<center><form method="POST"action="l4p2.php" ><h3>FACTORIAL</h3>
+<center><form method="POST"action="lab2.php" ><h3>FACTORIAL</h3>
         Enter a number:&nbsp;&nbsp;<input type="text" name="number" required><br><br>
         <input type="submit" value="SUBMIT">  <br>
    <h4> "<?php print $message ?>  </form></div></h4>

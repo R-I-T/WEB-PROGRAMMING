@@ -57,7 +57,7 @@ h4{
 </head>
 
 <body><div>
-<center><form method="GET"action="l4p1.php" ><h3>ODD OR EVEN CHECKING</h3>
+<center><form method="GET"action="lab1.php" ><h3>ODD OR EVEN CHECKING</h3>
         Enter a number:&nbsp;&nbsp;<input type="text" name="number" required><br><br>
         <input type="submit" value="SUBMIT">  <br>
    <h4> "<?php print $message ?>  </form></div></h4>
